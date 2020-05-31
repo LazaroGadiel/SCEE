@@ -1,0 +1,42 @@
+
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title%}
+Persona
+{% endblock %}
+{% block css %}
+   <link rel="stylesheet" type="text/css" href="{% static 'js/media/dataTables.bootstrap.css' %}"/>
+   <link href="{% static 'assets/plugins/select2_last/select2.min.css' %}" rel="stylesheet" type="text/css"/>
+   <link href="{% static 'assets/plugins/bootstrap-select/bootstrap-select.min.css' %}" rel="stylesheet" type="text/css"/>
+   <link href="{% static 'assets/plugins/jquery-multi-select/css/multi-select.css' %}" rel="stylesheet" type="text/css"/>
+   <!-- END THEME STYLES -->
+{%endblock%}
+
+{% block content %}
+ 
+ 
+ <section class="mainBody">
+      <router-view></router-view>
+ </section>
+   
+{% endblock%}
+
+{% block extrajs %}
+<script src="{% static 'assets/plugins/select2_last/select2.full.min.js' %}"></script>
+<script src="{% static 'assets/plugins/bootstrap-select/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'assets/plugins/jquery-multi-select/js/jquery.multi-select.js' %}"></script>
+<script src="{% static 'js/media/js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'js/media/dataTables.bootstrap.js' %}"></script>
+<script src="{% static 'js/html2canvas.min.js' %}"></script>
+<script src="{% static 'js/pdfmake.min.js' %}"></script>
+<script src="{% static 'js/jquery.table2excel.min.js' %}"></script>
+<script src="{% static 'vue/js/vue.min.js' %}"></script>
+<script src="{% static 'vue/js/http-vue-loader.js' %}"></script>
+<script src="{% static 'vue/js/vue-router.min.js' %}"></script>
+<script src="{% static 'js/axios.js' %}"></script>
+<script src="{% static 'js/bootstrap-waitingfor.min.js' %}"></script>
+<script src="{% static 'vue/js/index.js' %}"></script>
+<script type="text/javascript">
+
+</script>
+{% endblock %} 
